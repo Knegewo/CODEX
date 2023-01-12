@@ -1,4 +1,4 @@
-import bot from './assets/bot.svg';
+import lionofJudah from './assets/lionofJudah.png';
 import user from './assets/user.svg';
 
 const form = document.querySelector('form');
@@ -13,7 +13,7 @@ function loader(element) {
   loadInterval = setInterval(() => {
   element.textContent += '.';
   
-  if(element.textContent === '....') {  //if the loading inicator has reached 3 dots we need reset it every 3 seconds
+  if(element.textContent === '....') {  //if the loading inicator has reached 3 dots we need to reset it every 3 seconds
   element.textContent = '';
 }
 }, 300) 
@@ -52,8 +52,8 @@ function chatStripe (isAi, value, uniqueId) {
       <div class="chat">
         <div class="profile">
           <img 
-          src="${isAi ? bot : user}" 
-          alt="${isAi ? 'bot' : 'user'}"  
+          src="${isAi ? lionofJudah : user}" 
+          alt="${isAi ? 'lionofJudah' : 'user'}"  
         />
       </div>
          <div class="message" id=${uniqueId}>${value}</div>
